@@ -63,11 +63,11 @@ AddEventHandler('cx-repro:FazRepro', function()
         }, {}, {}, function() 
             StopAnimTask(PlayerPedId(), "anim@amb@clubhouse@tutorial@bkr_tut_ig3@", "machinic_loop_mechandplayer", 1.0)
 
-            SetVehicleHandlingFloat(vehicle, "CHandlingData", "fInitialDriveForce", 100) --Boost
-            SetVehicleHandlingFloat(vehicle, "CHandlingData", "fDriveInertia", 100) --Aceleration
-            SetVehicleHandlingFloat(vehicle, "CHandlingData", "fDriveBiasFront", 50.0) --Drive Train
-            SetVehicleHandlingFloat(vehicle, "CHandlingData", "fBrakeBiasFront", 50.0) -- Breaking
-            SetVehicleEnginePowerMultiplier(vehicle, 0.6) --Gear Change
+	    SetVehicleHandlingFloat(vehicle, "CHandlingData", "fInitialDriveForce", 0.6) --Boost
+	    SetVehicleHandlingFloat(vehicle, "CHandlingData", "fDriveInertia", 0.6) --Aceleration
+	    SetVehicleHandlingFloat(vehicle, "CHandlingData", "fDriveBiasFront", 0.5) --Drive Train
+	    SetVehicleHandlingFloat(vehicle, "CHandlingData", "fBrakeBiasFront", 0.36) -- Breaking
+	    SetVehicleEnginePowerMultiplier(vehicle, 0.6) --Gear Change
 
 
             TriggerServerEvent('cx-repro:colocarepro', meucarro)
