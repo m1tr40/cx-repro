@@ -46,7 +46,6 @@ RegisterNetEvent('cx-repro:FazRepro')
 AddEventHandler('cx-repro:FazRepro', function()
     local ped = PlayerPedId()
     local inVehicle = IsPedInAnyVehicle(ped)
-    local org = QBCore.Functions.GetPlayerData().gang.name
 
     local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
     meucarro = QBCore.Functions.GetVehicleProperties(vehicle)
